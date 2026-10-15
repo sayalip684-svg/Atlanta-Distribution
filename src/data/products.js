@@ -14,7 +14,7 @@ export const categories = [
   { id: 'ready-to-eat',  name: 'Ready-to-Eat',       icon: '🍛', image: 'https://images.unsplash.com/photo-1606756790138-261d2b21cd75?w=600&h=400&fit=crop&auto=format',  count: 76  },
   { id: 'dairy',         name: 'Dairy & Beverages',  icon: '🥛', image: 'https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=600&h=400&fit=crop&auto=format',  count: 54  },
   { id: 'snacks',        name: 'Snacks & Namkeen',   icon: '🍿', image: 'https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=600&h=400&fit=crop&auto=format',  count: 89  },
-  { id: 'frozen',        name: 'Frozen Foods',       icon: '❄️', image: 'https://images.unsplash.com/photo-1605197788044-394e6b49b0d7?w=600&h=400&fit=crop&auto=format',  count: 63  },
+  { id: 'frozen',        name: 'Frozen Foods',       icon: '❄️', image: 'https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=600&h=800&fit=crop&auto=format', count: 63  },
 ]
 
 export const products = [
@@ -156,7 +156,7 @@ export const products = [
     images: [
       'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=800&h=800&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=800&h=800&fit=crop&auto=format',
-    ],
+    ], 
     packSize: '200g',
     netWeight: '200g',
     sku: 'SWD-CMN-200',
