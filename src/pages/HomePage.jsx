@@ -71,10 +71,10 @@ function ProductCarousel() {
 function TerritoryBlock() {
   const states = serviceStates
   const clientTypes = [
-    { icon: '🏪', label: 'Indian Grocery Stores', desc: 'Full-shelf solutions with planogram support' },
-    { icon: '🍽️', label: 'Indian Restaurants', desc: 'Bulk ingredients & ready-to-cook solutions' },
-    { icon: '🏬', label: 'Ethnic Supermarkets', desc: 'Multi-brand category management' },
-    { icon: '📦', label: 'Resellers & Wholesalers', desc: 'Competitive case pricing for re-distribution' },
+    {  label: 'Indian Grocery Stores', desc: 'Full-shelf solutions with planogram support' },
+    { label: 'Indian Restaurants', desc: 'Bulk ingredients & ready-to-cook solutions' },
+    { label: 'Ethnic Supermarkets', desc: 'Multi-brand category management' },
+    { label: 'Resellers & Wholesalers', desc: 'Competitive case pricing for re-distribution' },
   ]
 
   return (
@@ -283,19 +283,32 @@ export default function HomePage() {
             <h2 className="text-3xl font-bold text-gray-900" style={{ fontFamily: 'Playfair Display, serif' }}>Featured Brands</h2>
             <p className="text-gray-500 text-sm mt-2">Official wholesale distribution partner for India's most trusted FMCG brands</p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
             {brands.map(brand => (
               <Link
-                key={brand.id}
-                to={`/catalog/${brand.id}`}
-                className="group bg-white rounded-xl border border-gray-200 p-5 text-center hover:border-orange-300 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-              >
-                <div className="w-14 h-14 mx-auto rounded-full flex items-center justify-center text-white text-xl font-bold mb-3 group-hover:scale-110 transition-transform" style={{ backgroundColor: '#0F2C59' }}>
-                  {brand.name[0]}
-                </div>
-                <h3 className="font-bold text-sm text-gray-800 group-hover:text-orange-600 transition-colors">{brand.name}</h3>
-                <p className="text-xs text-gray-400 mt-0.5">{brand.tagline}</p>
-              </Link>
+  key={brand.id}
+  to={`/catalog/${brand.id}`}
+  className="group bg-white rounded-xl border border-gray-200 p-5 flex flex-col items-center text-center hover:border-orange-300 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+>
+  {/* Logo Container */}
+  <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center mb-3 group-hover:scale-110 transition-transform overflow-hidden shadow-sm border border-gray-100 p-2 shrink-0">
+    <img src={brand.logo} alt={brand.name} className="w-full h-full object-contain" />
+  </div>
+  
+  {/* Name Container: Forces exactly 40px of height so all titles align identically */}
+  <div className="min-h-[40px] flex items-center justify-center w-full mb-1">
+    <h3 className="font-bold text-sm text-gray-800 group-hover:text-orange-600 transition-colors">
+      {brand.name}
+    </h3>
+  </div>
+  
+  {/* Tagline Container: Forces exactly 36px of height so all taglines align identically */}
+  <div className="min-h-[36px] flex items-start justify-center w-full">
+    <p className="text-xs text-gray-400 leading-snug">
+      {brand.tagline}
+    </p>
+  </div>
+</Link>
             ))}
           </div>
         </div>

@@ -31,10 +31,12 @@ export default function Header() {
             <span className="flex items-center gap-1"><Phone size={11} /><a href="tel:+14045550199" className="hover:text-white transition-colors">+1 (404) 555-0199</a></span>
             <span className="hidden sm:inline">Serving GA · FL · SC · NC · TN · AL</span>
           </div>
-          <div className="text-xs text-white/70">
-            <span className="hidden sm:inline">B2B Wholesale Only — </span>
-            <Link to="/wholesale" className="text-yellow-400 font-medium hover:text-yellow-300 transition-colors">Apply for Account →</Link>
-          </div>
+          <div className="bg-[#0F2C59] text-white text-xs py-2 px-4 border-b border-white/10">
+  <div className="max-w-7xl mx-auto flex justify-between items-center">
+    <div>+1 (404) 555-0199 | Serving GA · FL · SC · NC · TN · AL</div>
+    {/* The B2B link has been removed */}
+  </div>
+</div>
         </div>
       </div>
 

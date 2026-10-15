@@ -1,20 +1,19 @@
 // ─── Product & Brand Data ──────────────────────────────────────────────────
 export const brands = [
-  { id: 'swad',       name: 'Swad',          logo: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=200&h=100&fit=crop&auto=format', tagline: 'Authentic Indian Flavors' },
-  { id: 'mtr',        name: 'MTR',            logo: 'https://images.unsplash.com/photo-1606756790138-261d2b21cd75?w=200&h=100&fit=crop&auto=format', tagline: 'Ready-to-Eat Meals' },
-  { id: 'aashirvaad', name: 'Aashirvaad',    logo: 'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=200&h=100&fit=crop&auto=format', tagline: 'Atta & Spice Range' },
-  { id: 'haldirams',  name: "Haldiram's",    logo: 'https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=200&h=100&fit=crop&auto=format', tagline: 'Snacks & Namkeen' },
-  { id: 'deep',       name: 'Deep Foods',    logo: 'https://images.unsplash.com/photo-1605197788044-394e6b49b0d7?w=200&h=100&fit=crop&auto=format', tagline: 'Frozen & Fresh' },
-  { id: 'patanjali',  name: 'Patanjali',     logo: 'https://images.unsplash.com/photo-1518843875459-f738682238a6?w=200&h=100&fit=crop&auto=format', tagline: 'Natural & Organic' },
+  { id: 'chitale', name: 'Chitale Bandhu', tagline: 'Iconic Bakarwadi & Sweets', logo: '/logos/chitale.jpg' },
+  { id: 'suhana', name: 'Suhana', tagline: 'Authentic Spices & Mixes', logo: '/logos/Suhana.jpg' },
+  { id: 'bedekar', name: 'Bedekar', tagline: 'Traditional Pickles & Masalas', logo: '/logos/Bedekar.png' },
+  { id: 'haldirams', name: "Haldiram's", tagline: 'Namkeen & Savories', logo: '/logos/Haldirams.png' },
+  { id: 'balaji', name: 'Balaji Wafers', tagline: 'Crunchy Wafers & Namkeen', logo: '/logos/Balaji.png' },
 ]
 
 export const categories = [
-  { id: 'spices',        name: 'Spices & Masalas',   icon: '🌶️', image: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&h=400&fit=crop&auto=format',  count: 142 },
-  { id: 'grains',        name: 'Grains & Pulses',    icon: '🌾', image: 'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=600&h=400&fit=crop&auto=format',  count: 98  },
-  { id: 'ready-to-eat',  name: 'Ready-to-Eat',       icon: '🍛', image: 'https://images.unsplash.com/photo-1606756790138-261d2b21cd75?w=600&h=400&fit=crop&auto=format',  count: 76  },
-  { id: 'dairy',         name: 'Dairy & Beverages',  icon: '🥛', image: 'https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=600&h=400&fit=crop&auto=format',  count: 54  },
-  { id: 'snacks',        name: 'Snacks & Namkeen',   icon: '🍿', image: 'https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=600&h=400&fit=crop&auto=format',  count: 89  },
-  { id: 'frozen',        name: 'Frozen Foods',       icon: '❄️', image: 'https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=600&h=800&fit=crop&auto=format', count: 63  },
+  { id: 'spices',        name: 'Spices & Masalas', image: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&h=400&fit=crop&auto=format',  count: 142 },
+  { id: 'grains',        name: 'Grains & Pulses',    image: 'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=600&h=400&fit=crop&auto=format',  count: 98  },
+  { id: 'ready-to-eat',  name: 'Ready-to-Eat',       image: 'https://images.unsplash.com/photo-1606756790138-261d2b21cd75?w=600&h=400&fit=crop&auto=format',  count: 76  },
+  { id: 'dairy',         name: 'Dairy & Beverages',  image: 'https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=600&h=400&fit=crop&auto=format',  count: 54  },
+  { id: 'snacks',        name: 'Snacks & Namkeen',   image: 'https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=600&h=400&fit=crop&auto=format',  count: 89  },
+  { id: 'frozen',        name: 'Frozen Foods',       image: 'https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=600&h=800&fit=crop&auto=format', count: 63  },
 ]
 
 export const products = [
